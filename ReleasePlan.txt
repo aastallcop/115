@@ -1,0 +1,28 @@
+Sustainability Release Plan, Sustainability, Team Sustainers, r1, 3/17/15, Revision 1, 1/19/15
+ 
+Heading: Document name ("Release Plan"), product name, team name, release name, release date, revision number & revision date.                    
+
+High Level Goals:
+Create a functional webpage/app interface
+Connect backend data to stream live data to the interface
+
+User Stories for Release: 
+Sprint 1
+As a team, we want to create a high level design so that can begin development and analysis
+As individuals, learn the relevant technologies so that we can develop our project
+As a team, communicate with the sponsor so that we have a better understanding of what the customer wants
+
+Sprint 2    
+As a user, I want a functional GUI/Interface so that I can see how to conserve energy
+As a back end developer, I want sufficient data and analysis so that I can develop a data structure for the front end
+As a front end developer, I want the backend data to be complete so that I can present the data using my interface
+
+Sprint 3
+As a user, I want the user to be aesthetically pleasing so that all may be enticed by it
+As a team, we want to test our product to ensure that the customer is happy
+
+Product Backlog: 
+Create high level design plan for the first release
+Start development/coding for the second sprint
+Product testing for the third sprint
+
