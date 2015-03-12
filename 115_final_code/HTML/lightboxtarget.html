@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>LIGHTBOX EXAMPLE</title>
+    <style>
+    .black_overlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #19171c;;
+        z-index:1001;
+        -moz-opacity: 0.9;
+        opacity:.90;
+        filter: alpha(opacity=80);
+    }
+
+    .white_content {
+        display: none;
+        transition: all 0.9 ease;
+    }
+
+    .white_content:target {
+        position: absolute;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-indent: 15px;
+        color: white;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        background-color: #2D253A;
+        border: 30px solid rgba(225, 135, 40, 0.5); /* #e18728, last field = opacity */
+        border-radius: 15px;
+        z-index:1002;
+        overflow: auto;
+        -webkit-background-clip: padding-box;
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+    }
+    p {
+        font-size: 24px;
+    }
+
+</style>
+</head>
+<body>
+    <p>This is the main content. To display a lightbox click <a href="#light" onclick="displayPopup();">here</a></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tellus libero. Aenean gravida, lorem in consequat varius, massa nulla venenatis dui, ac eleifend mi lorem in ligula. Praesent iaculis at ex quis laoreet. Mauris cursus lacus non neque ullamcorper, vitae sollicitudin erat varius. Vestibulum vitae elit a felis tempus lobortis eu at libero. Vivamus a purus augue. Integer at mi semper, pellentesque nisi sit amet, finibus tortor. Vestibulum at libero egestas, aliquam felis nec, pellentesque ante.
+
+Vestibulum lectus sem, ultricies eget condimentum vitae, elementum quis turpis. In quis venenatis augue, quis congue lacus. Integer tellus arcu, efficitur eget velit molestie, tincidunt auctor odio. In quam odio, dictum eu consectetur quis, ornare vel nibh. Morbi at efficitur ligula. Morbi euismod porttitor mauris, et sodales arcu ullamcorper vitae. Duis sed odio magna. Nam id placerat felis. Praesent convallis magna vitae mauris molestie lobortis. Integer finibus bibendum velit, et lacinia elit posuere quis. Duis suscipit viverra ipsum, vitae sollicitudin dui porta id. Etiam tristique ultricies mauris ut malesuada. Etiam vel leo sit amet mauris posuere consectetur.
+
+Suspendisse consequat velit et euismod malesuada. Pellentesque malesuada imperdiet metus, nec lacinia lorem vulputate vitae. Morbi sed blandit libero. Donec quis metus neque. Phasellus in purus non dolor tempus pellentesque. Curabitur tincidunt nunc non quam ullamcorper, id luctus augue fermentum. Phasellus eu tortor tortor. Quisque sed risus dictum, semper lorem sed, tristique ex. Nam luctus cursus dapibus. Proin scelerisque purus sapien. Vivamus ut libero dapibus, suscipit elit et, maximus nunc. Morbi tincidunt, justo vitae aliquet congue, lectus urna sagittis elit, id viverra mi magna vitae leo. Pellentesque vitae ex orci. Sed iaculis elementum aliquam. Ut non aliquam diam, eget iaculis leo.
+
+Nullam bibendum tristique ipsum, vel euismod arcu dignissim eu. Aenean turpis mi, feugiat feugiat consectetur et, consectetur vel nulla. Quisque pulvinar molestie nunc, eget tincidunt diam placerat pellentesque. Aliquam vestibulum semper gravida. Duis eget odio eleifend, placerat nisl a, cursus mi. Pellentesque pellentesque tincidunt dui, a hendrerit velit vulputate at. Nulla suscipit ac sem non aliquam. Maecenas magna lacus, semper at arcu nec, varius lacinia enim. Aenean facilisis neque eu metus luctus elementum. Ut lectus felis, commodo tincidunt augue id, pharetra ullamcorper eros. Donec nisl sem, sagittis eu odio sit amet, consequat ultricies mauris.
+
+Maecenas at molestie tellus. Proin eget augue urna. Aenean a porta mi. Nullam volutpat sit amet sapien sed sollicitudin. Sed eu ex in mauris gravida dignissim et ac sapien. Aenean eu urna eu tellus lobortis ultricies et ac nunc. Vestibulum mattis, metus nec iaculis pretium, est tellus lobortis purus, et finibus elit elit rutrum erat. Sed pharetra eget urna eget pulvinar. Nunc sit amet purus sit amet massa efficitur mattis. Maecenas et euismod massa, et sodales ante. Vestibulum vestibulum, velit id placerat pharetra, velit lectus luctus dui, ac ultricies libero odio non purus. Vestibulum dapibus urna nec mollis scelerisque.</p>
+    <div id="light" class="white_content">This is the lightbox content.</div>
+    <div id="fade" class="black_overlay"></div>
+</body>
+<footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- don't forget the http:// part -->
+    <script src="lightbox.js"></script>
+</footer>
+</html>

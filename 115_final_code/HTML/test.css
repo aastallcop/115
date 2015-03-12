@@ -1,0 +1,44 @@
+/*-------------------------------
+            classes
+--------------------------------*/
+.bigicon {
+    margin:5px; /* controls space between icons */
+    border-radius: 10px;
+    float:center;
+    position: relative;
+    
+    
+}
+.text {
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 400px;
+    background: rgba(72, 82, 91, 0.75);
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    
+}
+/*-------------------------------
+            div sections
+--------------------------------*/
+
+div .bigicon {}
+div .bigicon:hover { }
+
+div .bigicon .text {
+    visibility: hidden;
+}
+div .bigicon:hover .text {
+    visibility: visible;   
+}
+
+/*-------------------------------
+            ids
+--------------------------------*/
+#floatnav {
+   padding: 5px;
+   position: relative;
+   display: block;
+ }
