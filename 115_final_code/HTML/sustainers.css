@@ -1,0 +1,379 @@
+/* ==========================================================================
+   Loader
+   ========================================================================== */
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'sans-serif', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    background-color: #2D363F;
+    zoom: 1px;
+    /* Only for Firefox */
+    -moz-transform: scale(1);
+}
+
+.page-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* ==========================================================================
+   Main header
+   ========================================================================== */
+.main-header {
+    background-color: #fff;
+    height: 90px;
+    position: relative;
+    text-align: center;
+}
+
+.site-logo {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.site-logo .site-name {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.site-logo .site-slogan {
+    color: #333;
+    font-size: 15px;
+    font-family: serif;
+    font-weight: normal;
+}
+
+.main-header .nav-item {
+    color: #000;
+    font-weight: 700;
+    font-family: 'futura-pt', sans-serif;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    text-decoration: none;
+    background-color: #fff;
+    /* causes color fades */
+    transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+}
+
+/* hovering over  */
+.main-header .nav-item:hover {
+    color: #fff;
+    background-color: #00ddb6;
+}
+
+.main-header .nav-item:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -0.25em;
+}
+
+.main-header .nav-item .text, .main-header .nav-item:after {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header .nav-left {
+    left: 0;
+}
+
+.main-header .nav-right {
+    right: 0;
+}
+
+
+/* ==========================================================================
+   PopUpBox
+   ========================================================================== */
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #19171c;
+    z-index:1001;
+    -moz-opacity: 0.9;
+    opacity:.90;
+    filter: alpha(opacity=80);
+}
+
+.popUpBox {
+    display: none;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-indent: 15px;
+    color: white;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    padding: 16px;
+    /* background-color: #2D253A; */
+    background-color: #4399C2;
+    /* border: 30px solid rgba(225, 135, 40, 0.5); */ /* #e18728, last field = opacity */
+    border: 30px solid rgba(62, 199, 154, 0.5);
+    border-radius: 15px;
+    z-index:1002;
+    overflow: auto;
+    -webkit-background-clip: padding-box; 
+}
+
+.here {
+    color: red;
+    cursor: pointer;
+}
+
+.here1 {
+    color: red;
+    cursor: pointer;
+}
+
+.here2 {
+    color: red;
+    cursor: pointer;
+}
+
+.here3 {
+    color: red;
+    cursor: pointer;
+}
+
+.here4 {
+    color: red;
+    cursor: pointer;
+}
+
+.here5 {
+    color: red;
+    cursor: pointer;
+}
+
+.here6 {
+    color: red;
+    cursor: pointer;
+}
+
+.here7 {
+    color: red;
+    cursor: pointer;
+}
+
+.here8 {
+    color: red;
+    cursor: pointer;
+}
+
+.here9 {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+#icon-container {
+    position: relative;
+    display: block;
+}
+
+.bigicon {
+    float: left;
+    position: relative;
+    max-height: 300px;
+    max-width: 400px;
+
+    /* adding height/width here causes constraints */
+    /* make so columns increase when max width reached for more icons and less width
+        or columns decrease when min width reach for less icons and more width*/
+}
+
+.bigicon:hover { }
+
+/* center images to the columns */
+.icon-img {
+    height: 300px;
+    width: 400px;
+    border: 0px solid transparent;
+}
+
+.bigicon .icon-label {
+    opacity: 0;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 400px;
+    color: #FFF;
+    position: absolute;
+	background: rgba(25, 23, 28, 0.85);
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 300px;
+    transition: opacity 0.35s ease-in-out;
+    -moz-transition: opacity 0.35s ease-in-out;
+    -webkit-transition: opacity 0.35s ease-in-out;
+	
+}
+
+.bigicon:hover .icon-label {
+    opacity: 1;
+}
+
+/* doesn't seem necessary -*- slide down text? -*-
+.bigicon .icon-label .icon-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+*/
+
+
+
+/* ==========================================================================
+   About
+   ==========================================================================
+.section-about .container {
+    margin: 0 auto;
+    padding: 70px 0;
+    width: 770px;
+}
+
+.section-about .profile {
+    text-align: center;
+}
+
+.section-about .profile .profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.section-about .profile .profile-text {
+    font-size: 26px;
+    line-height: 1.8;
+}
+
+.section-about .profile .profile-text:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #00ddb6;
+    margin: 45px auto 0 auto;
+}
+
+.section-about .details {
+    overflow: hidden;
+    padding: 0;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgb(240,240,240);
+}
+
+.section-about .details dt {
+    clear: left;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 700;
+    color: #333;
+    line-height: 28px;
+    padding: 9px 0 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    border-top: 1px solid rgb(230,230,230);
+}
+
+.section-about .details dd {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-family: 'Adobe Caslon Pro', serif;
+    color: rgb(50, 50, 50);
+    line-height: 28px;
+    padding: 9px 0 7px;
+    text-transform: none;
+    text-align: left;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.section-about .details dt:first-child,
+.section-about .details dd:nth-child(2) {
+    border-top: 0;
+}
+
+.section-about .details dd a {
+    color: rgb(50, 50, 50);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+.section-about .details dd a:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+
+/* ==========================================================================
+   Icon Container
+   ========================================================================== 
+.icon-container {
+  background-color: #19171c;
+}
+
+.icon-container .icon {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 1.2s;
+  -webkit-transition: opacity 1.2s;
+  -moz-transition: opacity 1.2s;
+}
+
+.icon-container .icon .icon-pic {
+  border: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  z-index: 1;
+
+}
+
+.icon-container .icon-overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
