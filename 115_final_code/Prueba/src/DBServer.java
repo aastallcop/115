@@ -54,19 +54,10 @@ class Reading extends TimerTask{
 	   private static ResultSet resultSet = null;
 	   private static BufferedWriter bw = null;
 	   public Reading(){
-	     //readSocket(); If you want to read the whole file uncomment this.
+	     //readSocket(); //If you want to read the whole file uncomment this.
 		 //this section is executed in only the first iteration, later only runs the method run.
-		   /*createConnectionMySQL();
-		   try {
-		    	 File file_test = new File("TEST.txt");
-				file_test.createNewFile();
-				BufferedWriter bw_test = new BufferedWriter(new FileWriter(file_test));
-				bw_test.write((int)Math.round(ReadValues_hourly(13, 2, 1, 1, "friday")*1000)+"");
-				  bw_test.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}*/
+		   createConnectionMySQL();
+		   
 		   
 		 list_of_hours[0] = 1;
 		 list_of_hours[1] = 2;
@@ -188,7 +179,7 @@ class Reading extends TimerTask{
 		   //createConnectionMySQL();
 		   try {
 				 //HeatingRate TEN MINUTES
-			   File file = new File("../HTML/HeatingRate.txt");
+			   File file = new File("../HTML/heatingRate.txt");
 			     
 			     //file.canWrite();
 			     file.createNewFile();
@@ -241,7 +232,7 @@ class Reading extends TimerTask{
 		   //createConnectionMySQL();
 		   try {
 				 //Pressure.txt HOURLY
-			   File file = new File("../HTML/Pressure.txt");
+			   File file = new File("../HTML/pressure.txt");
 			     
 			     //file.canWrite();
 			     file.createNewFile();
@@ -264,8 +255,7 @@ class Reading extends TimerTask{
 	   @Override
 	   public void run() {
 		
-		 System.out.println("Hi see you after 5 seconds");
-	     System.out.println("esto se reptie");
+		 System.out.println("Hi see you after 1 seconds");
 	     createConnectionMySQL();
 	  
 	     write_zoneMeanAir();
@@ -367,9 +357,7 @@ class Reading extends TimerTask{
 		         String line = null;
 
 		         while ((line = br.readLine()) != null) {
-		                           
-		            if (line.contains("hola")) break;
-
+		                          
 		            System.out.println(line);
 		            list_of_components = line.split(",");
 
