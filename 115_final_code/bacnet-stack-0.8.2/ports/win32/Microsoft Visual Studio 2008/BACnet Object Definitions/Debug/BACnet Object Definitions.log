@@ -1,0 +1,58 @@
+﻿Build started 3/10/2015 7:56:25 PM.
+     1>Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2008\BACnet Object Definitions\BACnet Object Definitions.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\.. /I..\..\..\..\include /I"H:\Program Files\Microsoft SDKs\Windows\v5.0\Include" /I..\..\..\..\demo\object /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\demo\object\ai.c ..\..\..\..\demo\object\ao.c ..\..\..\..\demo\object\av.c ..\..\..\..\demo\object\bacfile.c ..\..\..\..\demo\object\bi.c ..\..\..\..\demo\object\bo.c ..\..\..\..\demo\object\bv.c ..\..\..\..\demo\object\csv.c ..\..\..\..\demo\object\device.c ..\..\..\..\demo\object\lc.c ..\..\..\..\demo\object\lo.c ..\..\..\..\demo\object\lsp.c "..\..\..\..\demo\object\ms-input.c" ..\..\..\..\demo\object\mso.c ..\..\..\..\demo\object\msv.c ..\..\..\..\demo\object\trendlog.c
+         trendlog.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         msv.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         mso.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         ms-input.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         lsp.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         lo.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         lc.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         device.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         csv.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         bv.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         bo.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         bi.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         bacfile.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         av.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         ao.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         ai.c
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\tyler\desktop\bacnet-stack-0.8.2\ports\win32\stdbool.h(17): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         Generating Code...
+     1>Done Building Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2008\BACnet Object Definitions\BACnet Object Definitions.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.32
