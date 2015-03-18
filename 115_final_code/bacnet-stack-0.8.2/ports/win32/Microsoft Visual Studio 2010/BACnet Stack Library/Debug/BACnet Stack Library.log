@@ -1,9 +1,0 @@
-﻿Build started 3/10/2015 9:05:24 PM.
-     1>Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2010\BACnet Stack Library\BACnet Stack Library.vcxproj" on node 2 (Build target(s)).
-     1>Lib:
-         BACnet Stack Library.vcxproj -> C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2010\Debug\BACnet Stack Library.lib
-     1>Done Building Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2010\BACnet Stack Library\BACnet Stack Library.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.08
