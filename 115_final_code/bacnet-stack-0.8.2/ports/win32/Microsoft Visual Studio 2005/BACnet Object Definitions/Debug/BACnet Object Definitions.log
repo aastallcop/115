@@ -1,0 +1,40 @@
+﻿Build started 3/10/2015 8:34:06 PM.
+     1>Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2005\BACnet Object Definitions\BACnet Object Definitions.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\.. /I..\..\..\..\include /I"H:\Program Files\Microsoft SDKs\Windows\v5.0\Include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\demo\object\ai.c ..\..\..\..\demo\object\ao.c ..\..\..\..\demo\object\av.c ..\..\..\..\demo\object\bacfile.c ..\..\..\..\demo\object\bi.c ..\..\..\..\demo\object\bo.c ..\..\..\..\demo\object\bv.c ..\..\..\..\demo\object\device.c ..\..\..\..\demo\object\lc.c ..\..\..\..\demo\object\lo.c ..\..\..\..\demo\object\lsp.c "..\..\..\..\demo\object\ms-input.c" ..\..\..\..\demo\object\mso.c ..\..\..\..\demo\object\trendlog.c
+         trendlog.c
+         mso.c
+         ms-input.c
+         lsp.c
+         lo.c
+         lc.c
+         device.c
+         bv.c
+         bo.c
+         bi.c
+         bacfile.c
+         av.c
+         ao.c
+         ai.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2005\Debug\BACnet Object Definitions.lib" /NOLOGO Debug\ai.obj
+         Debug\ao.obj
+         Debug\av.obj
+         Debug\bacfile.obj
+         Debug\bi.obj
+         Debug\bo.obj
+         Debug\bv.obj
+         Debug\device.obj
+         Debug\lc.obj
+         Debug\lo.obj
+         Debug\lsp.obj
+         "Debug\ms-input.obj"
+         Debug\mso.obj
+         Debug\trendlog.obj
+         BACnet Object Definitions.vcxproj -> C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2005\Debug\BACnet Object Definitions.lib
+     1>Done Building Project "C:\Users\Tyler\Desktop\bacnet-stack-0.8.2\ports\win32\Microsoft Visual Studio 2005\BACnet Object Definitions\BACnet Object Definitions.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.93
